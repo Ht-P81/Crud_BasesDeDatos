@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
 // Issue SQL statement.
                 db.delete(Estructura_BBDD.TABLE_NAME, selection, selectionArgs);
 
-                Toast.makeText(getApplicationContext(), "Se borró el registro " + textoId.getText().toString(), Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Se borró el registro número: " + textoId.getText().toString(), Toast.LENGTH_LONG).show();
                 //Para vaciar esos campos, es decir pone en blanco los registros del campo que se haya borrado
                 textoId.setText("");
                 textoApellido.setText("");
